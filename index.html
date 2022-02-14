@@ -13,16 +13,46 @@
         margin-bottom: 15px;
       }
 
-      p {
-        border: 1px solid rgba(2, 6, 17, 0.445);
-        background-color: #b9b8b8;
+      .section {
+        padding: 10px;
+        border: 1px solid rgb(5, 6, 8);
+        background-color: #d0cfd6;
         width: 90%;
-        height: 150px;
+        height: auto;
         margin-right: auto;
         margin-left: auto;
         font-family: Helvetica;
-        color: rgb(241, 240, 234)
+        color: rgb(7, 7, 22);
         position: relative;
+        float: inline-end;
+        clear: both;
+      }
+
+      .chicken {
+        border: 1px solid rgb(27, 9, 48);
+        background-color: #d48888;
+        width: 33.3%;
+        font-family: Helvetica;
+        color: rgb(26, 12, 12);
+        float: right;
+      }
+
+      .beef {
+        border: 1px solid rgb(17, 2, 2);
+        background-color: #5a0a22;
+        width: 33.3%;
+        font-family: Helvetica;
+        color: rgb(245, 247, 240);
+        float: right;
+      }
+
+      .sushi {
+        border: 1px solid rgb(17, 2, 2);
+        background-color: #4e5a0a;
+        width: 33.3%;
+        font-family: Helvetica;
+        color: rgb(245, 247, 240);
+        float: right;
       }
 
       /* Simple Responsive Framework. */
@@ -45,7 +75,6 @@
         .col-lg-11,
         .col-lg-12 {
           float: left;
-          border: 1px solid green;
         }
         .col-lg-1 {
           width: 8.33%;
@@ -86,7 +115,7 @@
       }
 
       /********** Medium devices only **********/
-      @media (min-width: 992px) and (max-width: 1199px) {
+      @media (min-width: 950px) and (max-width: 1199px) {
         .col-md-1,
         .col-md-2,
         .col-md-3,
@@ -100,7 +129,6 @@
         .col-md-11,
         .col-md-12 {
           float: left;
-          border: 1px solid green;
         }
         .col-md-1 {
           width: 8.33%;
@@ -146,31 +174,37 @@
 
     <div class="row">
       <div class="col-lg-3 col-md-6">
-        <div>Chicken</div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          minima aperiam eaque architecto rerum aliquam ea commodi cupiditate
-          nobis, quo dolore perspiciatis exercitationem accusamus tenetur,
-          blanditiis enim! Assumenda, sapiente dolore.
-        </p>
+        <div class="section">
+          <h2 class="chicken">Chicken</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus minima aperiam eaque architecto rerum aliquam ea
+            commodi cupiditate nobis, quo dolore perspiciatis exercitationem
+            accusamus tenetur, blanditiis enim! Assumenda, sapiente dolore.
+          </p>
+        </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div>Beef</div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-          aperiam, hic amet, enim dolor facere fugiat fugit numquam illo aliquam
-          corrupti veritatis repellat perferendis voluptatum minima! Adipisci
-          magnam molestiae quis?
-        </p>
+        <div class="section">
+          <h2 class="beef">Beef</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+            aperiam, hic amet, enim dolor facere fugiat fugit numquam illo
+            aliquam corrupti veritatis repellat perferendis voluptatum minima!
+            Adipisci magnam molestiae quis?
+          </p>
+        </div>
       </div>
       <div class="col-lg-3 col-md-6">
-        <div>Sushi</div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          obcaecati nisi laborum corrupti culpa alias mollitia quaerat quibusdam
-          dolorum reprehenderit veniam vero dicta nesciunt molestias, velit
-          itaque? Libero, reprehenderit. Fugiat.
-        </p>
+        <div class="section">
+          <h2 class="sushi">Sushi</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            obcaecati nisi laborum corrupti culpa alias mollitia quaerat
+            quibusdam dolorum reprehenderit veniam vero dicta nesciunt
+            molestias, velit itaque? Libero, reprehenderit. Fugiat.
+          </p>
+        </div>
       </div>
     </div>
   </body>
